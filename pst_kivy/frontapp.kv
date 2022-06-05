@@ -1,0 +1,15 @@
+#:include frontface.kv
+#:include wifipage.kv
+#:include selectmode.kv
+#:include manual.kv
+#:include tracking.kv
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+FrontApp:
+    # changer le type de transition
+    transition: FadeTransition()
+
+    FrontFace:
+    SelectMode:
+    Manual:
+    Tracking:

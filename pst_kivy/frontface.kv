@@ -1,0 +1,21 @@
+<FrontFace>:
+    name: "frontface"
+
+    # used to color background object
+    canvas.before:
+        Color:
+            rgba: (52/255, 155/255, 235/255, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # utilisation du anchorlayout pour faciliter
+    # le centrage de l'image
+    AnchorLayout:
+        anchor_x:"center"
+        anchor_y:"center"
+
+        Image:
+            size_hint: (0.8, 0.8)
+            source: "logo.png"
+            allow_strech: True
